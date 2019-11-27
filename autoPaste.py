@@ -38,7 +38,7 @@ def requestPaste(data: str) -> str:
 
 def main():
     s = get_clipboard()
-    url = requestPaste(s)
+    url = "https://paste.ubuntu.com" + requestPaste(s)
     set_clipboard(url)
     print("Paste completed, the url was copied to your clipboard")
     pass
